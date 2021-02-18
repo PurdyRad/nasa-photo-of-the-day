@@ -26,18 +26,17 @@ function App() {
 
   return (
     <div className="App">
-      <div className='header'>
-        <h3>{post.copyright}</h3>
-        <h3>{post.date}</h3>
-      </div>
+      {/* <div className='image-container'>
+        <img src='https://cdn.britannica.com/38/111338-050-D23BE7C8/Stars-NGC-290-Hubble-Space-Telescope.jpg' alt= 'stary night sky'></img>
+      </div> */}
       <p>
         {/* Read through the instructions in the README.md file to build your NASA
         app! Have fun  */
         }
         <span role="img" aria-label='go!'>🚀</span>
       </p>
-      <Post post={post} />
       <Title post={post} />
+      <Post post={post} />
       <Details post={post}/>
     </div>
   );
